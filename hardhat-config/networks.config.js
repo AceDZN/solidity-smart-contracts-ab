@@ -1,10 +1,12 @@
+const os = require('os').homedir()
+const { mnemonic } = require(os + '/.mnemonics')
 module.exports = {
   networks: {
     hardhat: {
       gas: 19000000,
       allowUnlimitedContractSize: true,
       timeout: 1800000,
-      accounts: { mnemonic: process.env.MNEMONIC },
+      accounts: { mnemonic },
     },
 
     mainnet: {
@@ -12,28 +14,28 @@ module.exports = {
       chainId: 1,
       gasPrice: 'auto',
       tags: ['production'],
-      accounts: { mnemonic: process.env.MNEMONIC },
+      accounts: { mnemonic },
     },
     polygon: {
       url: process.env.PROVIDER_URL_INFURA_MATIC,
       chainId: 137,
       gasPrice: 'auto',
       tags: ['production'],
-      accounts: { mnemonic: process.env.MNEMONIC },
+      accounts: { mnemonic },
     },
     goerli: {
       url: process.env.PROVIDER_URL_INFURA_GOERLI,
       chainId: 5,
       gasPrice: 'auto',
       tags: ['testnet'],
-      accounts: { mnemonic: process.env.MNEMONIC },
+      accounts: { mnemonic },
     },
     mumbai: {
       url: process.env.PROVIDER_URL_INFURA_MUMBAI,
       chainId: 80001,
       gasPrice: 'auto',
       tags: ['testnet'],
-      accounts: { mnemonic: process.env.MNEMONIC },
+      accounts: { mnemonic },
     },
   },
 }

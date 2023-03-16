@@ -1,14 +1,14 @@
 TN:
-SF:/Users/alexsindalovsky/dev/EDC-TT-Smart-Contract/hardhat-files/contracts/EDuCoin.sol
+SF:/Users/alexsindalovsky/dev/edc-smart-contract/contracts/EDuCoin.sol
 FN:31,constructor
 FN:38,_msgSender
 FN:43,_msgData
 FNF:3
 FNH:3
-FNDA:30,constructor
+FNDA:33,constructor
 FNDA:633,_msgSender
 FNDA:1,_msgData
-DA:34,30
+DA:34,33
 DA:39,633
 DA:44,1
 LF:3
@@ -17,7 +17,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/Users/alexsindalovsky/dev/EDC-TT-Smart-Contract/hardhat-files/contracts/EDuCoinMock.sol
+SF:/Users/alexsindalovsky/dev/edc-smart-contract/contracts/EDuCoinMock.sol
 FN:18,constructor
 FN:21,_msgSender
 FN:26,_msgData

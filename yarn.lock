@@ -26,13 +26,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@animoca/revv-ethereum-contracts@npm:^6.2.1":
-  version: 6.2.1
-  resolution: "@animoca/revv-ethereum-contracts@npm:6.2.1"
-  checksum: 666b9c75827672cd5b18a0c371a99f4f19bf4f22388f0ecf16f323819c0573d79e46f2dadb0877806c1e5cef6b37de03c4aa282861ad8f06f84ea36e4d9b9cee
-  languageName: node
-  linkType: hard
-
 "@babel/code-frame@npm:^7.0.0":
   version: 7.18.6
   resolution: "@babel/code-frame@npm:7.18.6"
@@ -2751,6 +2744,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"commander@npm:^4.0.0":
+  version: 4.1.1
+  resolution: "commander@npm:4.1.1"
+  checksum: d7b9913ff92cae20cb577a4ac6fcc121bd6223319e54a40f51a14740a681ad5c574fd29a57da478a5f234a6fa6c52cbf0b7c641353e03c648b1ae85ba670b977
+  languageName: node
+  linkType: hard
+
 "concat-map@npm:0.0.1":
   version: 0.0.1
   resolution: "concat-map@npm:0.0.1"
@@ -2941,7 +2941,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cross-spawn@npm:^7.0.1, cross-spawn@npm:^7.0.2":
+"cross-spawn@npm:^7.0.0, cross-spawn@npm:^7.0.1, cross-spawn@npm:^7.0.2":
   version: 7.0.3
   resolution: "cross-spawn@npm:7.0.3"
   dependencies:
@@ -3252,7 +3252,6 @@ __metadata:
     "@animoca/ethereum-contract-helpers": ^0.0.1
     "@animoca/ethereum-contracts": ^1.1.0
     "@animoca/ethereum-migrations": ^1.0.3
-    "@animoca/revv-ethereum-contracts": ^6.2.1
     "@ethersproject/abi": ^5.7.0
     "@ethersproject/providers": ^5.7.0
     "@nomicfoundation/hardhat-chai-matchers": ^1.0.3
@@ -3267,6 +3266,7 @@ __metadata:
     chai: ^4.3.6
     cross-env: ^7.0.3
     dotenv: ^16.0.3
+    env-cmd: ^10.1.0
     eslint: ^8.24.0
     eslint-config-mocha: ^0.0.0
     eslint-config-prettier: ^8.5.0
@@ -3276,7 +3276,7 @@ __metadata:
     fs-extra: ^10.1.0
     glob: ^8.0.3
     hardhat: ^2.13.0
-    hardhat-deploy: ^0.11.24
+    hardhat-deploy: ^0.11.25
     hardhat-deploy-ethers: ^0.3.0-beta.13
     hardhat-gas-reporter: ^1.0.2
     lodash.clonedeep: ^4.5.0
@@ -3369,6 +3369,18 @@ __metadata:
   dependencies:
     ansi-colors: ^4.1.1
   checksum: 1c0911e14a6f8d26721c91e01db06092a5f7675159f0261d69c403396a385afd13dd76825e7678f66daffa930cfaa8d45f506fb35f818a2788463d022af1b884
+  languageName: node
+  linkType: hard
+
+"env-cmd@npm:^10.1.0":
+  version: 10.1.0
+  resolution: "env-cmd@npm:10.1.0"
+  dependencies:
+    commander: ^4.0.0
+    cross-spawn: ^7.0.0
+  bin:
+    env-cmd: bin/env-cmd.js
+  checksum: efef55074250f14cfc0b80c98dd98f1f056a80e1f3c7db14097ceefdd2d56c766bbb83b54c22932112707f41b36ce2e923f8015d69e62a75c12d98640b972e75
   languageName: node
   linkType: hard
 
@@ -4891,7 +4903,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hardhat-deploy@npm:^0.11.24":
+"hardhat-deploy@npm:^0.11.25":
   version: 0.11.25
   resolution: "hardhat-deploy@npm:0.11.25"
   dependencies:

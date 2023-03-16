@@ -94,8 +94,8 @@ runBehaviorTests('EDuCoinMock', config, function (deployFn) {
 })
 
 describe('EDuCoin allocation on deploy', function () {
-  const arguments = require('../scripts/args/arguments')
   let EDuCoin, add1, add2, deployer
+  const arguments = require('../test_arguments')
   const [tokenName, tokenSymbol, tokenDecimals, tokenHolders, tokenAmounts, forwardRegistryContract] = [...arguments]
   const totalSupply = tokenAmounts.reduce((accumulator, currentValue) => BigInt(accumulator) + BigInt(currentValue), 0)
 
@@ -121,7 +121,6 @@ describe('EDuCoin allocation on deploy', function () {
       //assert.fail('must throw err')
     })
   })
-
   it('check each user has the correct allocation', async () => {
     for (let i = 0; i < tokenHolders.length; i++) {
       await EDuCoin.balanceOf(tokenHolders[i]).then((userBalance) => {
