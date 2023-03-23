@@ -7,9 +7,13 @@
     "compile": "npx hardhat compile",
     "test": "npx hardhat coverage --testfiles 'test/**/*.js'",
     "deploy:goerli": "npx hardhat --network goerli deploy",
-    "verify:goerli": "npx hardhat verify --constructor-args scripts/args/arguments.js --network goerli ",
+    "verify:goerli": "npx hardhat verify --constructor-args deploy_arguments.js --network goerli ",
     "deploy:mainnet": "npx hardhat --network mainnet deploy",
-    "verify:mainnet": "npx hardhat verify --constructor-args scripts/args/arguments.js --network mainnet "
+    "verify:mainnet": "npx hardhat verify --constructor-args scripts/args/arguments.js --network mainnet ",
+    "deploy:bsc": "npx hardhat --network bsc deploy",
+    "verify:bsc": "npx hardhat verify --constructor-args deploy_arguments.js --network bsc ",
+    "deploy:bscTestnet": "npx hardhat --network bscTestnet deploy",
+    "verify:bscTestnet": "npx hardhat verify --constructor-args deploy_arguments.js --network bscTestnet "
   },
   "repository": {
     "type": "git",

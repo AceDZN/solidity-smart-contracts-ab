@@ -7,6 +7,8 @@ module.exports = {
       goerli: process.env.ETHERSCAN_API_KEY_GOERLI,
       polygonMumbai: process.env.ETHERSCAN_API_KEY_MUMBAI,
       polygon: process.env.ETHERSCAN_API_KEY_MATIC,
+      bsc: process.env.ETHERSCAN_API_KEY_BNB,
+      bscTestnet: process.env.ETHERSCAN_API_KEY_BNB,
     },
   },
 }

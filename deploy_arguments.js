@@ -50,8 +50,8 @@ const holders = [
   },
 ]
 const AssetData = [
-  'Education-Coin', // Token Name
-  'EDC', // Token Symbol
+  'Education Token', // Token Name
+  'EDU', // Token Symbol
   18, // Token Decimals
   holders.map((holder) => holder.wallet), // Holders list
   holders.map((holder) => holder.allocation), // Holders allocation
