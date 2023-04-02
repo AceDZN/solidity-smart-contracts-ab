@@ -6,7 +6,7 @@ This project contains the solidity contract for the OpenCampus EDU Token.
 
 | Date       | Scope            | Commit                                                                                                                          | Auditor                                  | Report                                                       |
 | ---------- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------- | ------------------------------------------------------------ |
-| 14/11/2022 | EDC ERC-20 Token | [6fd45c2db3a1e41113135151814bcbc9e618f1f0](https://github.com/tinytap/edc-smart-contract/blob/EDC-freeze/contracts/EDuCoin.sol) | [Solidified](https://www.solidified.io/) | [link](/audits/AuditReport-TinyTap_EDuCoin_[23.03.2023].pdf) |
+| 17/03/2023 | EDC ERC-20 Token | [6fd45c2db3a1e41113135151814bcbc9e618f1f0](https://github.com/tinytap/edc-smart-contract/blob/EDC-freeze/contracts/EDuCoin.sol) | [Solidified](https://www.solidified.io/) | [link](/audits/AuditReport-TinyTap_EDuCoin_[23.03.2023].pdf) |
 
 ## Solidity contracts
 
@@ -38,12 +38,6 @@ Install the dependencies:
 
 ```bash
 yarn install
-```
-
-or
-
-```bash
-npm install
 ```
 
 #### Compile the contract:
