@@ -28,7 +28,7 @@
   "devDependencies": {
     "@animoca/ethereum-contract-helpers": "^0.0.1",
     "@animoca/ethereum-contracts": "^1.1.0",
-    "@animoca/ethereum-migrations": "^1.0.3",
+    "@animoca/ethereum-migrations": "^1.0.5",
     "@ethersproject/abi": "^5.7.0",
     "@ethersproject/providers": "^5.7.0",
     "@nomicfoundation/hardhat-chai-matchers": "^1.0.3",
@@ -69,7 +69,8 @@
   "dependencies": {
     "@openzeppelin/merkle-tree": "^1.0.1",
     "dotenv": "^16.0.3",
-    "web3": "^1.8.2"
+    "web3": "^1.8.2",
+    "yesno": "^0.4.0"
   }
 }
 

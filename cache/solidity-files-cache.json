@@ -2227,8 +2227,8 @@
       ]
     },
     "/Users/alexsindalovsky/dev/edc-smart-contract/contracts/EDuCoinMock.sol": {
-      "lastModificationDate": 1678966695131,
-      "contentHash": "e30cc7428f1986750e2939b11cae9cce",
+      "lastModificationDate": 1680446883865,
+      "contentHash": "337e544b8423912a0c0fcf034b16ab25",
       "sourceName": "contracts/EDuCoinMock.sol",
       "solcConfig": {
         "version": "0.8.17",
@@ -2262,7 +2262,6 @@
       },
       "imports": [
         "@animoca/ethereum-contracts/contracts/metatx/interfaces/IForwarderRegistry.sol",
-        "@animoca/ethereum-contracts/contracts/metatx/base/ForwarderRegistryContextBase.sol",
         "@animoca/ethereum-contracts/contracts/token/ERC20/ERC20Mintable.sol",
         "@openzeppelin/contracts/utils/Context.sol",
         "./EDuCoin.sol"

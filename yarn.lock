@@ -19,10 +19,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@animoca/ethereum-migrations@npm:^1.0.3":
-  version: 1.0.3
-  resolution: "@animoca/ethereum-migrations@npm:1.0.3"
-  checksum: 08e85d84b50d00b82a74f5e2ed5329f6bec87aed61d35203eae7bde88a9ea863acdfdf94b94668ba82324aa2ea4ed948bf92ba1c0c1269513e4010169947bad5
+"@animoca/ethereum-migrations@npm:^1.0.5":
+  version: 1.0.5
+  resolution: "@animoca/ethereum-migrations@npm:1.0.5"
+  checksum: adaa4dfa1466feb79c5be272d90d06c6f19b8d8921c6ec140adeef620598f5f28eefde0e41c66cc4268a215ac5d7d675a6445d1105ca40313cb84cfd21c2ef4c
   languageName: node
   linkType: hard
 
@@ -2744,13 +2744,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"commander@npm:^4.0.0":
-  version: 4.1.1
-  resolution: "commander@npm:4.1.1"
-  checksum: d7b9913ff92cae20cb577a4ac6fcc121bd6223319e54a40f51a14740a681ad5c574fd29a57da478a5f234a6fa6c52cbf0b7c641353e03c648b1ae85ba670b977
-  languageName: node
-  linkType: hard
-
 "concat-map@npm:0.0.1":
   version: 0.0.1
   resolution: "concat-map@npm:0.0.1"
@@ -2941,7 +2934,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cross-spawn@npm:^7.0.0, cross-spawn@npm:^7.0.1, cross-spawn@npm:^7.0.2":
+"cross-spawn@npm:^7.0.1, cross-spawn@npm:^7.0.2":
   version: 7.0.3
   resolution: "cross-spawn@npm:7.0.3"
   dependencies:
@@ -3251,7 +3244,7 @@ __metadata:
   dependencies:
     "@animoca/ethereum-contract-helpers": ^0.0.1
     "@animoca/ethereum-contracts": ^1.1.0
-    "@animoca/ethereum-migrations": ^1.0.3
+    "@animoca/ethereum-migrations": ^1.0.5
     "@ethersproject/abi": ^5.7.0
     "@ethersproject/providers": ^5.7.0
     "@nomicfoundation/hardhat-chai-matchers": ^1.0.3
@@ -3266,7 +3259,6 @@ __metadata:
     chai: ^4.3.6
     cross-env: ^7.0.3
     dotenv: ^16.0.3
-    env-cmd: ^10.1.0
     eslint: ^8.24.0
     eslint-config-mocha: ^0.0.0
     eslint-config-prettier: ^8.5.0
@@ -3292,6 +3284,7 @@ __metadata:
     solidity-docgen: ^0.6.0-beta.29
     typechain: ^8.1.0
     web3: ^1.8.2
+    yesno: ^0.4.0
   languageName: unknown
   linkType: soft
 
@@ -3369,18 +3362,6 @@ __metadata:
   dependencies:
     ansi-colors: ^4.1.1
   checksum: 1c0911e14a6f8d26721c91e01db06092a5f7675159f0261d69c403396a385afd13dd76825e7678f66daffa930cfaa8d45f506fb35f818a2788463d022af1b884
-  languageName: node
-  linkType: hard
-
-"env-cmd@npm:^10.1.0":
-  version: 10.1.0
-  resolution: "env-cmd@npm:10.1.0"
-  dependencies:
-    commander: ^4.0.0
-    cross-spawn: ^7.0.0
-  bin:
-    env-cmd: bin/env-cmd.js
-  checksum: efef55074250f14cfc0b80c98dd98f1f056a80e1f3c7db14097ceefdd2d56c766bbb83b54c22932112707f41b36ce2e923f8015d69e62a75c12d98640b972e75
   languageName: node
   linkType: hard
 
@@ -10254,6 +10235,13 @@ __metadata:
     y18n: ^5.0.5
     yargs-parser: ^20.2.2
   checksum: b14afbb51e3251a204d81937c86a7e9d4bdbf9a2bcee38226c900d00f522969ab675703bee2a6f99f8e20103f608382936034e64d921b74df82b63c07c5e8f59
+  languageName: node
+  linkType: hard
+
+"yesno@npm:^0.4.0":
+  version: 0.4.0
+  resolution: "yesno@npm:0.4.0"
+  checksum: d5e7bc2ef8f8019f111dd82526c3d02f288e1b03ba5afa483140c1a98db9834589d0e07d9d1b14321489f727ceb0af0013d4b224b49dd10405743872e5ddd109
   languageName: node
   linkType: hard
 

@@ -4,6 +4,7 @@ const { mergeConfigs } = require('@animoca/ethereum-contract-helpers/src/config'
 
 require('@animoca/ethereum-contract-helpers/hardhat-plugins')
 require('@nomiclabs/hardhat-etherscan')
+require('@animoca/ethereum-migrations/hardhat-plugins')
 
 module.exports = mergeConfigs(
   require('@animoca/ethereum-contract-helpers/hardhat-config'),

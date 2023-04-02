@@ -2,7 +2,6 @@
 pragma solidity 0.8.17;
 
 import {IForwarderRegistry} from "@animoca/ethereum-contracts/contracts/metatx/interfaces/IForwarderRegistry.sol";
-import {ForwarderRegistryContextBase} from "@animoca/ethereum-contracts/contracts/metatx/base/ForwarderRegistryContextBase.sol";
 import {ERC20Mintable} from "@animoca/ethereum-contracts/contracts/token/ERC20/ERC20Mintable.sol";
 import {Context} from "@openzeppelin/contracts/utils/Context.sol";
 import {EDuCoin} from "./EDuCoin.sol";
