@@ -99,233 +99,8 @@
         "Context"
       ]
     },
-    "/Users/nathan/Workspace/animoca/tinytap/edc-smart-contract/node_modules/@animoca/ethereum-contracts/contracts/access/ContractOwnership.sol": {
-      "lastModificationDate": 1680486960303,
-      "contentHash": "d7296f86ca011180e94fb9c47cb9bae3",
-      "sourceName": "@animoca/ethereum-contracts/contracts/access/ContractOwnership.sol",
-      "solcConfig": {
-        "version": "0.8.17",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 99999
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "devdoc",
-                "userdoc",
-                "storageLayout",
-                "evm.gasEstimates"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          },
-          "metadata": {
-            "useLiteralContent": true
-          }
-        }
-      },
-      "imports": [
-        "./libraries/ContractOwnershipStorage.sol",
-        "./base/ContractOwnershipBase.sol",
-        "./../introspection/InterfaceDetection.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.8"
-      ],
-      "artifacts": [
-        "ContractOwnership"
-      ]
-    },
-    "/Users/nathan/Workspace/animoca/tinytap/edc-smart-contract/node_modules/@animoca/ethereum-contracts/contracts/token/ERC20/ERC20Detailed.sol": {
-      "lastModificationDate": 1680486960389,
-      "contentHash": "3703f7ea7228c538503fc80de9ae540a",
-      "sourceName": "@animoca/ethereum-contracts/contracts/token/ERC20/ERC20Detailed.sol",
-      "solcConfig": {
-        "version": "0.8.17",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 99999
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "devdoc",
-                "userdoc",
-                "storageLayout",
-                "evm.gasEstimates"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          },
-          "metadata": {
-            "useLiteralContent": true
-          }
-        }
-      },
-      "imports": [
-        "./libraries/ERC20DetailedStorage.sol",
-        "./base/ERC20DetailedBase.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.8"
-      ],
-      "artifacts": [
-        "ERC20Detailed"
-      ]
-    },
-    "/Users/nathan/Workspace/animoca/tinytap/edc-smart-contract/node_modules/@animoca/ethereum-contracts/contracts/token/ERC20/ERC20.sol": {
-      "lastModificationDate": 1680486960382,
-      "contentHash": "9332bc2585034ed9fc2da0dfdbf0e4e6",
-      "sourceName": "@animoca/ethereum-contracts/contracts/token/ERC20/ERC20.sol",
-      "solcConfig": {
-        "version": "0.8.17",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 99999
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "devdoc",
-                "userdoc",
-                "storageLayout",
-                "evm.gasEstimates"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          },
-          "metadata": {
-            "useLiteralContent": true
-          }
-        }
-      },
-      "imports": [
-        "./libraries/ERC20Storage.sol",
-        "./base/ERC20Base.sol",
-        "./../../introspection/InterfaceDetection.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.8"
-      ],
-      "artifacts": [
-        "ERC20"
-      ]
-    },
-    "/Users/nathan/Workspace/animoca/tinytap/edc-smart-contract/node_modules/@animoca/ethereum-contracts/contracts/token/ERC20/ERC20Permit.sol": {
-      "lastModificationDate": 1680486960391,
-      "contentHash": "9012c09da56bc04e190a64597feeb06e",
-      "sourceName": "@animoca/ethereum-contracts/contracts/token/ERC20/ERC20Permit.sol",
-      "solcConfig": {
-        "version": "0.8.17",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 99999
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "devdoc",
-                "userdoc",
-                "storageLayout",
-                "evm.gasEstimates"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          },
-          "metadata": {
-            "useLiteralContent": true
-          }
-        }
-      },
-      "imports": [
-        "./interfaces/IERC20Permit.sol",
-        "./libraries/ERC20PermitStorage.sol",
-        "./base/ERC20PermitBase.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.8"
-      ],
-      "artifacts": [
-        "ERC20Permit"
-      ]
-    },
-    "/Users/nathan/Workspace/animoca/tinytap/edc-smart-contract/node_modules/@animoca/ethereum-contracts/contracts/metatx/interfaces/IForwarderRegistry.sol": {
-      "lastModificationDate": 1680486960417,
-      "contentHash": "26dcb3303f5792033ce44b1a8f2cd3d1",
-      "sourceName": "@animoca/ethereum-contracts/contracts/metatx/interfaces/IForwarderRegistry.sol",
-      "solcConfig": {
-        "version": "0.8.17",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 99999
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "devdoc",
-                "userdoc",
-                "storageLayout",
-                "evm.gasEstimates"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          },
-          "metadata": {
-            "useLiteralContent": true
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.8"
-      ],
-      "artifacts": [
-        "IForwarderRegistry"
-      ]
-    },
     "/Users/nathan/Workspace/animoca/tinytap/edc-smart-contract/node_modules/@animoca/ethereum-contracts/contracts/security/TokenRecovery.sol": {
-      "lastModificationDate": 1680486960424,
+      "lastModificationDate": 1680506595214,
       "contentHash": "2d832925f8998005a4e9c3b030d2f09a",
       "sourceName": "@animoca/ethereum-contracts/contracts/security/TokenRecovery.sol",
       "solcConfig": {
@@ -369,99 +144,8 @@
         "TokenRecovery"
       ]
     },
-    "/Users/nathan/Workspace/animoca/tinytap/edc-smart-contract/node_modules/@animoca/ethereum-contracts/contracts/token/ERC20/ERC20SafeTransfers.sol": {
-      "lastModificationDate": 1680486960392,
-      "contentHash": "1b9af30d53ca5fd9b4f272ddbd600e65",
-      "sourceName": "@animoca/ethereum-contracts/contracts/token/ERC20/ERC20SafeTransfers.sol",
-      "solcConfig": {
-        "version": "0.8.17",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 99999
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "devdoc",
-                "userdoc",
-                "storageLayout",
-                "evm.gasEstimates"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          },
-          "metadata": {
-            "useLiteralContent": true
-          }
-        }
-      },
-      "imports": [
-        "./libraries/ERC20Storage.sol",
-        "./base/ERC20SafeTransfersBase.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.8"
-      ],
-      "artifacts": [
-        "ERC20SafeTransfers"
-      ]
-    },
-    "/Users/nathan/Workspace/animoca/tinytap/edc-smart-contract/node_modules/@animoca/ethereum-contracts/contracts/token/ERC20/ERC20Metadata.sol": {
-      "lastModificationDate": 1680486960390,
-      "contentHash": "024df2a7248a71fc043d37bcebf6c18f",
-      "sourceName": "@animoca/ethereum-contracts/contracts/token/ERC20/ERC20Metadata.sol",
-      "solcConfig": {
-        "version": "0.8.17",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 99999
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "devdoc",
-                "userdoc",
-                "storageLayout",
-                "evm.gasEstimates"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          },
-          "metadata": {
-            "useLiteralContent": true
-          }
-        }
-      },
-      "imports": [
-        "./libraries/ERC20MetadataStorage.sol",
-        "./base/ERC20MetadataBase.sol",
-        "./../../access/ContractOwnership.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.8"
-      ],
-      "artifacts": [
-        "ERC20Metadata"
-      ]
-    },
     "/Users/nathan/Workspace/animoca/tinytap/edc-smart-contract/node_modules/@animoca/ethereum-contracts/contracts/metatx/ForwarderRegistryContext.sol": {
-      "lastModificationDate": 1680486960415,
+      "lastModificationDate": 1680506595210,
       "contentHash": "9ebeca4da86f34bb8c122130939b217a",
       "sourceName": "@animoca/ethereum-contracts/contracts/metatx/ForwarderRegistryContext.sol",
       "solcConfig": {
@@ -506,8 +190,192 @@
         "ForwarderRegistryContext"
       ]
     },
+    "/Users/nathan/Workspace/animoca/tinytap/edc-smart-contract/node_modules/@animoca/ethereum-contracts/contracts/token/ERC20/ERC20.sol": {
+      "lastModificationDate": 1680506595195,
+      "contentHash": "9332bc2585034ed9fc2da0dfdbf0e4e6",
+      "sourceName": "@animoca/ethereum-contracts/contracts/token/ERC20/ERC20.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 99999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./libraries/ERC20Storage.sol",
+        "./base/ERC20Base.sol",
+        "./../../introspection/InterfaceDetection.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.8"
+      ],
+      "artifacts": [
+        "ERC20"
+      ]
+    },
+    "/Users/nathan/Workspace/animoca/tinytap/edc-smart-contract/node_modules/@animoca/ethereum-contracts/contracts/access/ContractOwnership.sol": {
+      "lastModificationDate": 1680506595175,
+      "contentHash": "d7296f86ca011180e94fb9c47cb9bae3",
+      "sourceName": "@animoca/ethereum-contracts/contracts/access/ContractOwnership.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 99999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./libraries/ContractOwnershipStorage.sol",
+        "./base/ContractOwnershipBase.sol",
+        "./../introspection/InterfaceDetection.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.8"
+      ],
+      "artifacts": [
+        "ContractOwnership"
+      ]
+    },
+    "/Users/nathan/Workspace/animoca/tinytap/edc-smart-contract/node_modules/@animoca/ethereum-contracts/contracts/token/ERC20/ERC20Permit.sol": {
+      "lastModificationDate": 1680506595199,
+      "contentHash": "9012c09da56bc04e190a64597feeb06e",
+      "sourceName": "@animoca/ethereum-contracts/contracts/token/ERC20/ERC20Permit.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 99999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IERC20Permit.sol",
+        "./libraries/ERC20PermitStorage.sol",
+        "./base/ERC20PermitBase.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.8"
+      ],
+      "artifacts": [
+        "ERC20Permit"
+      ]
+    },
+    "/Users/nathan/Workspace/animoca/tinytap/edc-smart-contract/node_modules/@animoca/ethereum-contracts/contracts/token/ERC20/ERC20Metadata.sol": {
+      "lastModificationDate": 1680506595199,
+      "contentHash": "024df2a7248a71fc043d37bcebf6c18f",
+      "sourceName": "@animoca/ethereum-contracts/contracts/token/ERC20/ERC20Metadata.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 99999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./libraries/ERC20MetadataStorage.sol",
+        "./base/ERC20MetadataBase.sol",
+        "./../../access/ContractOwnership.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.8"
+      ],
+      "artifacts": [
+        "ERC20Metadata"
+      ]
+    },
     "/Users/nathan/Workspace/animoca/tinytap/edc-smart-contract/node_modules/@animoca/ethereum-contracts/contracts/token/ERC20/ERC20BatchTransfers.sol": {
-      "lastModificationDate": 1680486960385,
+      "lastModificationDate": 1680506595196,
       "contentHash": "180476f16c15d15b1704f9045b67ef4a",
       "sourceName": "@animoca/ethereum-contracts/contracts/token/ERC20/ERC20BatchTransfers.sol",
       "solcConfig": {
@@ -551,10 +419,10 @@
         "ERC20BatchTransfers"
       ]
     },
-    "/Users/nathan/Workspace/animoca/tinytap/edc-smart-contract/node_modules/@animoca/ethereum-contracts/contracts/metatx/base/ForwarderRegistryContextBase.sol": {
-      "lastModificationDate": 1680486960416,
-      "contentHash": "6e3025577e440afe1a5ea9e3b8ab82f8",
-      "sourceName": "@animoca/ethereum-contracts/contracts/metatx/base/ForwarderRegistryContextBase.sol",
+    "/Users/nathan/Workspace/animoca/tinytap/edc-smart-contract/node_modules/@animoca/ethereum-contracts/contracts/token/ERC20/ERC20SafeTransfers.sol": {
+      "lastModificationDate": 1680506595199,
+      "contentHash": "1b9af30d53ca5fd9b4f272ddbd600e65",
+      "sourceName": "@animoca/ethereum-contracts/contracts/token/ERC20/ERC20SafeTransfers.sol",
       "solcConfig": {
         "version": "0.8.17",
         "settings": {
@@ -586,18 +454,105 @@
         }
       },
       "imports": [
-        "./../interfaces/IForwarderRegistry.sol",
-        "./../libraries/ERC2771Calldata.sol"
+        "./libraries/ERC20Storage.sol",
+        "./base/ERC20SafeTransfersBase.sol"
       ],
       "versionPragmas": [
         "^0.8.8"
       ],
       "artifacts": [
-        "ForwarderRegistryContextBase"
+        "ERC20SafeTransfers"
+      ]
+    },
+    "/Users/nathan/Workspace/animoca/tinytap/edc-smart-contract/node_modules/@animoca/ethereum-contracts/contracts/token/ERC20/ERC20Detailed.sol": {
+      "lastModificationDate": 1680506595198,
+      "contentHash": "3703f7ea7228c538503fc80de9ae540a",
+      "sourceName": "@animoca/ethereum-contracts/contracts/token/ERC20/ERC20Detailed.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 99999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./libraries/ERC20DetailedStorage.sol",
+        "./base/ERC20DetailedBase.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.8"
+      ],
+      "artifacts": [
+        "ERC20Detailed"
+      ]
+    },
+    "/Users/nathan/Workspace/animoca/tinytap/edc-smart-contract/node_modules/@animoca/ethereum-contracts/contracts/metatx/interfaces/IForwarderRegistry.sol": {
+      "lastModificationDate": 1680506595211,
+      "contentHash": "26dcb3303f5792033ce44b1a8f2cd3d1",
+      "sourceName": "@animoca/ethereum-contracts/contracts/metatx/interfaces/IForwarderRegistry.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 99999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.8"
+      ],
+      "artifacts": [
+        "IForwarderRegistry"
       ]
     },
     "/Users/nathan/Workspace/animoca/tinytap/edc-smart-contract/node_modules/@animoca/ethereum-contracts/contracts/token/ERC20/libraries/ERC20Storage.sol": {
-      "lastModificationDate": 1680486960390,
+      "lastModificationDate": 1680506595198,
       "contentHash": "fbb2d33f75bfe7428f69a608e62c3c5c",
       "sourceName": "@animoca/ethereum-contracts/contracts/token/ERC20/libraries/ERC20Storage.sol",
       "solcConfig": {
@@ -649,8 +604,102 @@
         "ERC20Storage"
       ]
     },
+    "/Users/nathan/Workspace/animoca/tinytap/edc-smart-contract/node_modules/@animoca/ethereum-contracts/contracts/metatx/base/ForwarderRegistryContextBase.sol": {
+      "lastModificationDate": 1680506595211,
+      "contentHash": "6e3025577e440afe1a5ea9e3b8ab82f8",
+      "sourceName": "@animoca/ethereum-contracts/contracts/metatx/base/ForwarderRegistryContextBase.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 99999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./../interfaces/IForwarderRegistry.sol",
+        "./../libraries/ERC2771Calldata.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.8"
+      ],
+      "artifacts": [
+        "ForwarderRegistryContextBase"
+      ]
+    },
+    "/Users/nathan/Workspace/animoca/tinytap/edc-smart-contract/node_modules/@animoca/ethereum-contracts/contracts/security/base/TokenRecoveryBase.sol": {
+      "lastModificationDate": 1680506595214,
+      "contentHash": "cf2a73073949308990245fc5bf193616",
+      "sourceName": "@animoca/ethereum-contracts/contracts/security/base/TokenRecoveryBase.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 99999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/interfaces/IERC20.sol",
+        "./../../token/ERC721/interfaces/IERC721.sol",
+        "./../../access/libraries/ContractOwnershipStorage.sol",
+        "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol",
+        "@openzeppelin/contracts/utils/Context.sol",
+        "@openzeppelin/contracts/utils/Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.8"
+      ],
+      "artifacts": [
+        "TokenRecoveryBase"
+      ]
+    },
     "/Users/nathan/Workspace/animoca/tinytap/edc-smart-contract/node_modules/@animoca/ethereum-contracts/contracts/introspection/InterfaceDetection.sol": {
-      "lastModificationDate": 1680486960419,
+      "lastModificationDate": 1680506595212,
       "contentHash": "4b19b976237d8687c5e666b278033dfc",
       "sourceName": "@animoca/ethereum-contracts/contracts/introspection/InterfaceDetection.sol",
       "solcConfig": {
@@ -695,7 +744,7 @@
       ]
     },
     "/Users/nathan/Workspace/animoca/tinytap/edc-smart-contract/node_modules/@animoca/ethereum-contracts/contracts/access/base/ContractOwnershipBase.sol": {
-      "lastModificationDate": 1680486960300,
+      "lastModificationDate": 1680506595174,
       "contentHash": "b8d097662125e9ecbb2ac4e106ce77a6",
       "sourceName": "@animoca/ethereum-contracts/contracts/access/base/ContractOwnershipBase.sol",
       "solcConfig": {
@@ -741,7 +790,7 @@
       ]
     },
     "/Users/nathan/Workspace/animoca/tinytap/edc-smart-contract/node_modules/@animoca/ethereum-contracts/contracts/access/libraries/ContractOwnershipStorage.sol": {
-      "lastModificationDate": 1680486960302,
+      "lastModificationDate": 1680506595175,
       "contentHash": "8f57e6435a1fe1b0a9e4d8073d16dc91",
       "sourceName": "@animoca/ethereum-contracts/contracts/access/libraries/ContractOwnershipStorage.sol",
       "solcConfig": {
@@ -787,7 +836,7 @@
       ]
     },
     "/Users/nathan/Workspace/animoca/tinytap/edc-smart-contract/node_modules/@animoca/ethereum-contracts/contracts/introspection/libraries/InterfaceDetectionStorage.sol": {
-      "lastModificationDate": 1680486960420,
+      "lastModificationDate": 1680506595212,
       "contentHash": "f726985f4dc16817e81b98ac43def5dd",
       "sourceName": "@animoca/ethereum-contracts/contracts/introspection/libraries/InterfaceDetectionStorage.sol",
       "solcConfig": {
@@ -831,7 +880,7 @@
       ]
     },
     "/Users/nathan/Workspace/animoca/tinytap/edc-smart-contract/node_modules/@animoca/ethereum-contracts/contracts/introspection/interfaces/IERC165.sol": {
-      "lastModificationDate": 1680486960418,
+      "lastModificationDate": 1680506595212,
       "contentHash": "b3cee08624d81310e700c6df0cc1737c",
       "sourceName": "@animoca/ethereum-contracts/contracts/introspection/interfaces/IERC165.sol",
       "solcConfig": {
@@ -873,7 +922,7 @@
       ]
     },
     "/Users/nathan/Workspace/animoca/tinytap/edc-smart-contract/node_modules/@animoca/ethereum-contracts/contracts/access/interfaces/IERC173.sol": {
-      "lastModificationDate": 1680486960303,
+      "lastModificationDate": 1680506595175,
       "contentHash": "e0d11e3b41d9ab397208ddb7d7a4bf75",
       "sourceName": "@animoca/ethereum-contracts/contracts/access/interfaces/IERC173.sol",
       "solcConfig": {
@@ -915,7 +964,7 @@
       ]
     },
     "/Users/nathan/Workspace/animoca/tinytap/edc-smart-contract/node_modules/@animoca/ethereum-contracts/contracts/proxy/libraries/ProxyInitialization.sol": {
-      "lastModificationDate": 1680486960422,
+      "lastModificationDate": 1680506595213,
       "contentHash": "d013d81776f4eb862fb8707fa894cd40",
       "sourceName": "@animoca/ethereum-contracts/contracts/proxy/libraries/ProxyInitialization.sol",
       "solcConfig": {
@@ -1000,480 +1049,6 @@
         "StorageSlot"
       ]
     },
-    "/Users/nathan/Workspace/animoca/tinytap/edc-smart-contract/node_modules/@animoca/ethereum-contracts/contracts/token/ERC20/libraries/ERC20DetailedStorage.sol": {
-      "lastModificationDate": 1680486960389,
-      "contentHash": "a734086cd42cf42034043865e01121ea",
-      "sourceName": "@animoca/ethereum-contracts/contracts/token/ERC20/libraries/ERC20DetailedStorage.sol",
-      "solcConfig": {
-        "version": "0.8.17",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 99999
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "devdoc",
-                "userdoc",
-                "storageLayout",
-                "evm.gasEstimates"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          },
-          "metadata": {
-            "useLiteralContent": true
-          }
-        }
-      },
-      "imports": [
-        "./../interfaces/IERC20Detailed.sol",
-        "./../../../proxy/libraries/ProxyInitialization.sol",
-        "./../../../introspection/libraries/InterfaceDetectionStorage.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.8"
-      ],
-      "artifacts": [
-        "ERC20DetailedStorage"
-      ]
-    },
-    "/Users/nathan/Workspace/animoca/tinytap/edc-smart-contract/node_modules/@animoca/ethereum-contracts/contracts/token/ERC20/base/ERC20DetailedBase.sol": {
-      "lastModificationDate": 1680486960384,
-      "contentHash": "2d614af7546f7b4210a1ae4eef70c8e8",
-      "sourceName": "@animoca/ethereum-contracts/contracts/token/ERC20/base/ERC20DetailedBase.sol",
-      "solcConfig": {
-        "version": "0.8.17",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 99999
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "devdoc",
-                "userdoc",
-                "storageLayout",
-                "evm.gasEstimates"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          },
-          "metadata": {
-            "useLiteralContent": true
-          }
-        }
-      },
-      "imports": [
-        "./../interfaces/IERC20Detailed.sol",
-        "./../libraries/ERC20DetailedStorage.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.8"
-      ],
-      "artifacts": [
-        "ERC20DetailedBase"
-      ]
-    },
-    "/Users/nathan/Workspace/animoca/tinytap/edc-smart-contract/node_modules/@animoca/ethereum-contracts/contracts/token/ERC20/interfaces/IERC20Detailed.sol": {
-      "lastModificationDate": 1680486960393,
-      "contentHash": "0e9b8ede19bc1e52f9188fbe1853d837",
-      "sourceName": "@animoca/ethereum-contracts/contracts/token/ERC20/interfaces/IERC20Detailed.sol",
-      "solcConfig": {
-        "version": "0.8.17",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 99999
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "devdoc",
-                "userdoc",
-                "storageLayout",
-                "evm.gasEstimates"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          },
-          "metadata": {
-            "useLiteralContent": true
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.8"
-      ],
-      "artifacts": [
-        "IERC20Detailed"
-      ]
-    },
-    "/Users/nathan/Workspace/animoca/tinytap/edc-smart-contract/node_modules/@animoca/ethereum-contracts/contracts/token/ERC20/base/ERC20Base.sol": {
-      "lastModificationDate": 1680486960383,
-      "contentHash": "c801fe54a5beb67eb65c796ed0367549",
-      "sourceName": "@animoca/ethereum-contracts/contracts/token/ERC20/base/ERC20Base.sol",
-      "solcConfig": {
-        "version": "0.8.17",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 99999
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "devdoc",
-                "userdoc",
-                "storageLayout",
-                "evm.gasEstimates"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          },
-          "metadata": {
-            "useLiteralContent": true
-          }
-        }
-      },
-      "imports": [
-        "./../interfaces/IERC20.sol",
-        "./../interfaces/IERC20Allowance.sol",
-        "./../libraries/ERC20Storage.sol",
-        "@openzeppelin/contracts/utils/Context.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.8"
-      ],
-      "artifacts": [
-        "ERC20Base"
-      ]
-    },
-    "/Users/nathan/Workspace/animoca/tinytap/edc-smart-contract/node_modules/@animoca/ethereum-contracts/contracts/token/ERC20/interfaces/IERC20.sol": {
-      "lastModificationDate": 1680486960392,
-      "contentHash": "137147a93e33a645f2799817dae72250",
-      "sourceName": "@animoca/ethereum-contracts/contracts/token/ERC20/interfaces/IERC20.sol",
-      "solcConfig": {
-        "version": "0.8.17",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 99999
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "devdoc",
-                "userdoc",
-                "storageLayout",
-                "evm.gasEstimates"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          },
-          "metadata": {
-            "useLiteralContent": true
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.8"
-      ],
-      "artifacts": [
-        "IERC20"
-      ]
-    },
-    "/Users/nathan/Workspace/animoca/tinytap/edc-smart-contract/node_modules/@animoca/ethereum-contracts/contracts/token/ERC20/interfaces/IERC20Mintable.sol": {
-      "lastModificationDate": 1680486960394,
-      "contentHash": "98060a9e633eeca54c4deb820bf474be",
-      "sourceName": "@animoca/ethereum-contracts/contracts/token/ERC20/interfaces/IERC20Mintable.sol",
-      "solcConfig": {
-        "version": "0.8.17",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 99999
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "devdoc",
-                "userdoc",
-                "storageLayout",
-                "evm.gasEstimates"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          },
-          "metadata": {
-            "useLiteralContent": true
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.8"
-      ],
-      "artifacts": [
-        "IERC20Mintable"
-      ]
-    },
-    "/Users/nathan/Workspace/animoca/tinytap/edc-smart-contract/node_modules/@animoca/ethereum-contracts/contracts/token/ERC20/interfaces/IERC20SafeTransfers.sol": {
-      "lastModificationDate": 1680486960394,
-      "contentHash": "db04f8fd0c7485e45111027891af65d8",
-      "sourceName": "@animoca/ethereum-contracts/contracts/token/ERC20/interfaces/IERC20SafeTransfers.sol",
-      "solcConfig": {
-        "version": "0.8.17",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 99999
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "devdoc",
-                "userdoc",
-                "storageLayout",
-                "evm.gasEstimates"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          },
-          "metadata": {
-            "useLiteralContent": true
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.8"
-      ],
-      "artifacts": [
-        "IERC20SafeTransfers"
-      ]
-    },
-    "/Users/nathan/Workspace/animoca/tinytap/edc-smart-contract/node_modules/@animoca/ethereum-contracts/contracts/token/ERC20/interfaces/IERC20Burnable.sol": {
-      "lastModificationDate": 1680486960393,
-      "contentHash": "cbe2587eb50c7e037f3e24506cdd20d7",
-      "sourceName": "@animoca/ethereum-contracts/contracts/token/ERC20/interfaces/IERC20Burnable.sol",
-      "solcConfig": {
-        "version": "0.8.17",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 99999
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "devdoc",
-                "userdoc",
-                "storageLayout",
-                "evm.gasEstimates"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          },
-          "metadata": {
-            "useLiteralContent": true
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.8"
-      ],
-      "artifacts": [
-        "IERC20Burnable"
-      ]
-    },
-    "/Users/nathan/Workspace/animoca/tinytap/edc-smart-contract/node_modules/@animoca/ethereum-contracts/contracts/token/ERC20/interfaces/IERC20Allowance.sol": {
-      "lastModificationDate": 1680486960392,
-      "contentHash": "134ccaaf9e684aaf2c6be6db492851ad",
-      "sourceName": "@animoca/ethereum-contracts/contracts/token/ERC20/interfaces/IERC20Allowance.sol",
-      "solcConfig": {
-        "version": "0.8.17",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 99999
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "devdoc",
-                "userdoc",
-                "storageLayout",
-                "evm.gasEstimates"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          },
-          "metadata": {
-            "useLiteralContent": true
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.8"
-      ],
-      "artifacts": [
-        "IERC20Allowance"
-      ]
-    },
-    "/Users/nathan/Workspace/animoca/tinytap/edc-smart-contract/node_modules/@animoca/ethereum-contracts/contracts/token/ERC20/interfaces/IERC20BatchTransfers.sol": {
-      "lastModificationDate": 1680486960393,
-      "contentHash": "e97bd8748b7b22616bc85c3c71817725",
-      "sourceName": "@animoca/ethereum-contracts/contracts/token/ERC20/interfaces/IERC20BatchTransfers.sol",
-      "solcConfig": {
-        "version": "0.8.17",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 99999
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "devdoc",
-                "userdoc",
-                "storageLayout",
-                "evm.gasEstimates"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          },
-          "metadata": {
-            "useLiteralContent": true
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.8"
-      ],
-      "artifacts": [
-        "IERC20BatchTransfers"
-      ]
-    },
-    "/Users/nathan/Workspace/animoca/tinytap/edc-smart-contract/node_modules/@animoca/ethereum-contracts/contracts/token/ERC20/interfaces/IERC20Receiver.sol": {
-      "lastModificationDate": 1680486960394,
-      "contentHash": "50b8e642fae6577f8f8ba43b515ffff4",
-      "sourceName": "@animoca/ethereum-contracts/contracts/token/ERC20/interfaces/IERC20Receiver.sol",
-      "solcConfig": {
-        "version": "0.8.17",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 99999
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "devdoc",
-                "userdoc",
-                "storageLayout",
-                "evm.gasEstimates"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          },
-          "metadata": {
-            "useLiteralContent": true
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.8"
-      ],
-      "artifacts": [
-        "IERC20Receiver"
-      ]
-    },
     "/Users/nathan/Workspace/animoca/tinytap/edc-smart-contract/node_modules/@openzeppelin/contracts/utils/Address.sol": {
       "lastModificationDate": 1680486959916,
       "contentHash": "f31ad6fc4bbf9c06203987220156a6ba",
@@ -1516,193 +1091,8 @@
         "Address"
       ]
     },
-    "/Users/nathan/Workspace/animoca/tinytap/edc-smart-contract/node_modules/@animoca/ethereum-contracts/contracts/token/ERC20/base/ERC20PermitBase.sol": {
-      "lastModificationDate": 1680486960385,
-      "contentHash": "49b7fa551ead4d4abeb3bc1783e3d2cd",
-      "sourceName": "@animoca/ethereum-contracts/contracts/token/ERC20/base/ERC20PermitBase.sol",
-      "solcConfig": {
-        "version": "0.8.17",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 99999
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "devdoc",
-                "userdoc",
-                "storageLayout",
-                "evm.gasEstimates"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          },
-          "metadata": {
-            "useLiteralContent": true
-          }
-        }
-      },
-      "imports": [
-        "./../interfaces/IERC20Permit.sol",
-        "./../libraries/ERC20PermitStorage.sol",
-        "@openzeppelin/contracts/utils/Context.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.8"
-      ],
-      "artifacts": [
-        "ERC20PermitBase"
-      ]
-    },
-    "/Users/nathan/Workspace/animoca/tinytap/edc-smart-contract/node_modules/@animoca/ethereum-contracts/contracts/token/ERC20/interfaces/IERC20Permit.sol": {
-      "lastModificationDate": 1680486960394,
-      "contentHash": "45780e8236a762c0401974b2c1a8d262",
-      "sourceName": "@animoca/ethereum-contracts/contracts/token/ERC20/interfaces/IERC20Permit.sol",
-      "solcConfig": {
-        "version": "0.8.17",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 99999
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "devdoc",
-                "userdoc",
-                "storageLayout",
-                "evm.gasEstimates"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          },
-          "metadata": {
-            "useLiteralContent": true
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.8"
-      ],
-      "artifacts": [
-        "IERC20Permit"
-      ]
-    },
-    "/Users/nathan/Workspace/animoca/tinytap/edc-smart-contract/node_modules/@animoca/ethereum-contracts/contracts/token/ERC20/libraries/ERC20PermitStorage.sol": {
-      "lastModificationDate": 1680486960390,
-      "contentHash": "25dcd3b4f894320342e298514ef3dc41",
-      "sourceName": "@animoca/ethereum-contracts/contracts/token/ERC20/libraries/ERC20PermitStorage.sol",
-      "solcConfig": {
-        "version": "0.8.17",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 99999
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "devdoc",
-                "userdoc",
-                "storageLayout",
-                "evm.gasEstimates"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          },
-          "metadata": {
-            "useLiteralContent": true
-          }
-        }
-      },
-      "imports": [
-        "./../interfaces/IERC20Permit.sol",
-        "@openzeppelin/contracts/utils/StorageSlot.sol",
-        "./ERC20Storage.sol",
-        "./ERC20DetailedStorage.sol",
-        "./../../../introspection/libraries/InterfaceDetectionStorage.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.8"
-      ],
-      "artifacts": [
-        "ERC20PermitStorage"
-      ]
-    },
-    "/Users/nathan/Workspace/animoca/tinytap/edc-smart-contract/node_modules/@animoca/ethereum-contracts/contracts/security/base/TokenRecoveryBase.sol": {
-      "lastModificationDate": 1680486960424,
-      "contentHash": "cf2a73073949308990245fc5bf193616",
-      "sourceName": "@animoca/ethereum-contracts/contracts/security/base/TokenRecoveryBase.sol",
-      "solcConfig": {
-        "version": "0.8.17",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 99999
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "devdoc",
-                "userdoc",
-                "storageLayout",
-                "evm.gasEstimates"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          },
-          "metadata": {
-            "useLiteralContent": true
-          }
-        }
-      },
-      "imports": [
-        "@openzeppelin/contracts/interfaces/IERC20.sol",
-        "./../../token/ERC721/interfaces/IERC721.sol",
-        "./../../access/libraries/ContractOwnershipStorage.sol",
-        "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol",
-        "@openzeppelin/contracts/utils/Context.sol",
-        "@openzeppelin/contracts/utils/Address.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.8"
-      ],
-      "artifacts": [
-        "TokenRecoveryBase"
-      ]
-    },
     "/Users/nathan/Workspace/animoca/tinytap/edc-smart-contract/node_modules/@animoca/ethereum-contracts/contracts/token/ERC721/interfaces/IERC721.sol": {
-      "lastModificationDate": 1680486960411,
+      "lastModificationDate": 1680506595208,
       "contentHash": "31e6b02c4b16694cbdc73b335efb502f",
       "sourceName": "@animoca/ethereum-contracts/contracts/token/ERC721/interfaces/IERC721.sol",
       "solcConfig": {
@@ -1915,10 +1305,94 @@
         "IERC20Permit"
       ]
     },
-    "/Users/nathan/Workspace/animoca/tinytap/edc-smart-contract/node_modules/@animoca/ethereum-contracts/contracts/token/ERC20/base/ERC20SafeTransfersBase.sol": {
-      "lastModificationDate": 1680486960385,
-      "contentHash": "22078d5c0a39b047e3afca052c6be8f3",
-      "sourceName": "@animoca/ethereum-contracts/contracts/token/ERC20/base/ERC20SafeTransfersBase.sol",
+    "/Users/nathan/Workspace/animoca/tinytap/edc-smart-contract/node_modules/@animoca/ethereum-contracts/contracts/metatx/interfaces/IERC2771.sol": {
+      "lastModificationDate": 1680506595211,
+      "contentHash": "4aaa8074ad0d8e5a72c3ff0e5477574f",
+      "sourceName": "@animoca/ethereum-contracts/contracts/metatx/interfaces/IERC2771.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 99999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.8"
+      ],
+      "artifacts": [
+        "IERC2771"
+      ]
+    },
+    "/Users/nathan/Workspace/animoca/tinytap/edc-smart-contract/node_modules/@animoca/ethereum-contracts/contracts/metatx/libraries/ERC2771Calldata.sol": {
+      "lastModificationDate": 1680506595210,
+      "contentHash": "41b57ac17ba011353ddb7665361d5c1a",
+      "sourceName": "@animoca/ethereum-contracts/contracts/metatx/libraries/ERC2771Calldata.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 99999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.8"
+      ],
+      "artifacts": [
+        "ERC2771Calldata"
+      ]
+    },
+    "/Users/nathan/Workspace/animoca/tinytap/edc-smart-contract/node_modules/@animoca/ethereum-contracts/contracts/token/ERC20/base/ERC20Base.sol": {
+      "lastModificationDate": 1680506595195,
+      "contentHash": "c801fe54a5beb67eb65c796ed0367549",
+      "sourceName": "@animoca/ethereum-contracts/contracts/token/ERC20/base/ERC20Base.sol",
       "solcConfig": {
         "version": "0.8.17",
         "settings": {
@@ -1950,7 +1424,8 @@
         }
       },
       "imports": [
-        "./../interfaces/IERC20SafeTransfers.sol",
+        "./../interfaces/IERC20.sol",
+        "./../interfaces/IERC20Allowance.sol",
         "./../libraries/ERC20Storage.sol",
         "@openzeppelin/contracts/utils/Context.sol"
       ],
@@ -1958,11 +1433,575 @@
         "^0.8.8"
       ],
       "artifacts": [
-        "ERC20SafeTransfersBase"
+        "ERC20Base"
+      ]
+    },
+    "/Users/nathan/Workspace/animoca/tinytap/edc-smart-contract/node_modules/@animoca/ethereum-contracts/contracts/token/ERC20/interfaces/IERC20Allowance.sol": {
+      "lastModificationDate": 1680506595200,
+      "contentHash": "134ccaaf9e684aaf2c6be6db492851ad",
+      "sourceName": "@animoca/ethereum-contracts/contracts/token/ERC20/interfaces/IERC20Allowance.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 99999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.8"
+      ],
+      "artifacts": [
+        "IERC20Allowance"
+      ]
+    },
+    "/Users/nathan/Workspace/animoca/tinytap/edc-smart-contract/node_modules/@animoca/ethereum-contracts/contracts/token/ERC20/interfaces/IERC20.sol": {
+      "lastModificationDate": 1680506595199,
+      "contentHash": "137147a93e33a645f2799817dae72250",
+      "sourceName": "@animoca/ethereum-contracts/contracts/token/ERC20/interfaces/IERC20.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 99999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.8"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/Users/nathan/Workspace/animoca/tinytap/edc-smart-contract/node_modules/@animoca/ethereum-contracts/contracts/token/ERC20/interfaces/IERC20SafeTransfers.sol": {
+      "lastModificationDate": 1680506595201,
+      "contentHash": "db04f8fd0c7485e45111027891af65d8",
+      "sourceName": "@animoca/ethereum-contracts/contracts/token/ERC20/interfaces/IERC20SafeTransfers.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 99999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.8"
+      ],
+      "artifacts": [
+        "IERC20SafeTransfers"
+      ]
+    },
+    "/Users/nathan/Workspace/animoca/tinytap/edc-smart-contract/node_modules/@animoca/ethereum-contracts/contracts/token/ERC20/interfaces/IERC20Burnable.sol": {
+      "lastModificationDate": 1680506595200,
+      "contentHash": "cbe2587eb50c7e037f3e24506cdd20d7",
+      "sourceName": "@animoca/ethereum-contracts/contracts/token/ERC20/interfaces/IERC20Burnable.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 99999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.8"
+      ],
+      "artifacts": [
+        "IERC20Burnable"
+      ]
+    },
+    "/Users/nathan/Workspace/animoca/tinytap/edc-smart-contract/node_modules/@animoca/ethereum-contracts/contracts/token/ERC20/interfaces/IERC20Mintable.sol": {
+      "lastModificationDate": 1680506595200,
+      "contentHash": "98060a9e633eeca54c4deb820bf474be",
+      "sourceName": "@animoca/ethereum-contracts/contracts/token/ERC20/interfaces/IERC20Mintable.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 99999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.8"
+      ],
+      "artifacts": [
+        "IERC20Mintable"
+      ]
+    },
+    "/Users/nathan/Workspace/animoca/tinytap/edc-smart-contract/node_modules/@animoca/ethereum-contracts/contracts/token/ERC20/interfaces/IERC20Receiver.sol": {
+      "lastModificationDate": 1680506595201,
+      "contentHash": "50b8e642fae6577f8f8ba43b515ffff4",
+      "sourceName": "@animoca/ethereum-contracts/contracts/token/ERC20/interfaces/IERC20Receiver.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 99999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.8"
+      ],
+      "artifacts": [
+        "IERC20Receiver"
+      ]
+    },
+    "/Users/nathan/Workspace/animoca/tinytap/edc-smart-contract/node_modules/@animoca/ethereum-contracts/contracts/token/ERC20/interfaces/IERC20BatchTransfers.sol": {
+      "lastModificationDate": 1680506595200,
+      "contentHash": "e97bd8748b7b22616bc85c3c71817725",
+      "sourceName": "@animoca/ethereum-contracts/contracts/token/ERC20/interfaces/IERC20BatchTransfers.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 99999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.8"
+      ],
+      "artifacts": [
+        "IERC20BatchTransfers"
+      ]
+    },
+    "/Users/nathan/Workspace/animoca/tinytap/edc-smart-contract/node_modules/@animoca/ethereum-contracts/contracts/token/ERC20/interfaces/IERC20Permit.sol": {
+      "lastModificationDate": 1680506595200,
+      "contentHash": "45780e8236a762c0401974b2c1a8d262",
+      "sourceName": "@animoca/ethereum-contracts/contracts/token/ERC20/interfaces/IERC20Permit.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 99999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.8"
+      ],
+      "artifacts": [
+        "IERC20Permit"
+      ]
+    },
+    "/Users/nathan/Workspace/animoca/tinytap/edc-smart-contract/node_modules/@animoca/ethereum-contracts/contracts/token/ERC20/base/ERC20PermitBase.sol": {
+      "lastModificationDate": 1680506595195,
+      "contentHash": "49b7fa551ead4d4abeb3bc1783e3d2cd",
+      "sourceName": "@animoca/ethereum-contracts/contracts/token/ERC20/base/ERC20PermitBase.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 99999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./../interfaces/IERC20Permit.sol",
+        "./../libraries/ERC20PermitStorage.sol",
+        "@openzeppelin/contracts/utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.8"
+      ],
+      "artifacts": [
+        "ERC20PermitBase"
+      ]
+    },
+    "/Users/nathan/Workspace/animoca/tinytap/edc-smart-contract/node_modules/@animoca/ethereum-contracts/contracts/token/ERC20/libraries/ERC20PermitStorage.sol": {
+      "lastModificationDate": 1680506595198,
+      "contentHash": "25dcd3b4f894320342e298514ef3dc41",
+      "sourceName": "@animoca/ethereum-contracts/contracts/token/ERC20/libraries/ERC20PermitStorage.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 99999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./../interfaces/IERC20Permit.sol",
+        "@openzeppelin/contracts/utils/StorageSlot.sol",
+        "./ERC20Storage.sol",
+        "./ERC20DetailedStorage.sol",
+        "./../../../introspection/libraries/InterfaceDetectionStorage.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.8"
+      ],
+      "artifacts": [
+        "ERC20PermitStorage"
+      ]
+    },
+    "/Users/nathan/Workspace/animoca/tinytap/edc-smart-contract/node_modules/@animoca/ethereum-contracts/contracts/token/ERC20/libraries/ERC20DetailedStorage.sol": {
+      "lastModificationDate": 1680506595198,
+      "contentHash": "a734086cd42cf42034043865e01121ea",
+      "sourceName": "@animoca/ethereum-contracts/contracts/token/ERC20/libraries/ERC20DetailedStorage.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 99999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./../interfaces/IERC20Detailed.sol",
+        "./../../../proxy/libraries/ProxyInitialization.sol",
+        "./../../../introspection/libraries/InterfaceDetectionStorage.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.8"
+      ],
+      "artifacts": [
+        "ERC20DetailedStorage"
+      ]
+    },
+    "/Users/nathan/Workspace/animoca/tinytap/edc-smart-contract/node_modules/@animoca/ethereum-contracts/contracts/token/ERC20/interfaces/IERC20Detailed.sol": {
+      "lastModificationDate": 1680506595200,
+      "contentHash": "0e9b8ede19bc1e52f9188fbe1853d837",
+      "sourceName": "@animoca/ethereum-contracts/contracts/token/ERC20/interfaces/IERC20Detailed.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 99999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.8"
+      ],
+      "artifacts": [
+        "IERC20Detailed"
+      ]
+    },
+    "/Users/nathan/Workspace/animoca/tinytap/edc-smart-contract/node_modules/@animoca/ethereum-contracts/contracts/token/ERC20/libraries/ERC20MetadataStorage.sol": {
+      "lastModificationDate": 1680506595198,
+      "contentHash": "93eb3d251cd416e81ee63c0ddcc2f333",
+      "sourceName": "@animoca/ethereum-contracts/contracts/token/ERC20/libraries/ERC20MetadataStorage.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 99999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./../interfaces/IERC20Metadata.sol",
+        "./../../../proxy/libraries/ProxyInitialization.sol",
+        "./../../../introspection/libraries/InterfaceDetectionStorage.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.8"
+      ],
+      "artifacts": [
+        "ERC20MetadataStorage"
       ]
     },
     "/Users/nathan/Workspace/animoca/tinytap/edc-smart-contract/node_modules/@animoca/ethereum-contracts/contracts/token/ERC20/base/ERC20MetadataBase.sol": {
-      "lastModificationDate": 1680486960384,
+      "lastModificationDate": 1680506595195,
       "contentHash": "f4b69ab647e5694de335231c14d71dd5",
       "sourceName": "@animoca/ethereum-contracts/contracts/token/ERC20/base/ERC20MetadataBase.sol",
       "solcConfig": {
@@ -2008,54 +2047,8 @@
         "ERC20MetadataBase"
       ]
     },
-    "/Users/nathan/Workspace/animoca/tinytap/edc-smart-contract/node_modules/@animoca/ethereum-contracts/contracts/token/ERC20/libraries/ERC20MetadataStorage.sol": {
-      "lastModificationDate": 1680486960389,
-      "contentHash": "93eb3d251cd416e81ee63c0ddcc2f333",
-      "sourceName": "@animoca/ethereum-contracts/contracts/token/ERC20/libraries/ERC20MetadataStorage.sol",
-      "solcConfig": {
-        "version": "0.8.17",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 99999
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "devdoc",
-                "userdoc",
-                "storageLayout",
-                "evm.gasEstimates"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          },
-          "metadata": {
-            "useLiteralContent": true
-          }
-        }
-      },
-      "imports": [
-        "./../interfaces/IERC20Metadata.sol",
-        "./../../../proxy/libraries/ProxyInitialization.sol",
-        "./../../../introspection/libraries/InterfaceDetectionStorage.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.8"
-      ],
-      "artifacts": [
-        "ERC20MetadataStorage"
-      ]
-    },
     "/Users/nathan/Workspace/animoca/tinytap/edc-smart-contract/node_modules/@animoca/ethereum-contracts/contracts/token/ERC20/interfaces/IERC20Metadata.sol": {
-      "lastModificationDate": 1680486960393,
+      "lastModificationDate": 1680506595200,
       "contentHash": "f8da44f1c864302301563f1a065b2f73",
       "sourceName": "@animoca/ethereum-contracts/contracts/token/ERC20/interfaces/IERC20Metadata.sol",
       "solcConfig": {
@@ -2096,92 +2089,8 @@
         "IERC20Metadata"
       ]
     },
-    "/Users/nathan/Workspace/animoca/tinytap/edc-smart-contract/node_modules/@animoca/ethereum-contracts/contracts/metatx/interfaces/IERC2771.sol": {
-      "lastModificationDate": 1680486960417,
-      "contentHash": "4aaa8074ad0d8e5a72c3ff0e5477574f",
-      "sourceName": "@animoca/ethereum-contracts/contracts/metatx/interfaces/IERC2771.sol",
-      "solcConfig": {
-        "version": "0.8.17",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 99999
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "devdoc",
-                "userdoc",
-                "storageLayout",
-                "evm.gasEstimates"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          },
-          "metadata": {
-            "useLiteralContent": true
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.8"
-      ],
-      "artifacts": [
-        "IERC2771"
-      ]
-    },
-    "/Users/nathan/Workspace/animoca/tinytap/edc-smart-contract/node_modules/@animoca/ethereum-contracts/contracts/metatx/libraries/ERC2771Calldata.sol": {
-      "lastModificationDate": 1680486960415,
-      "contentHash": "41b57ac17ba011353ddb7665361d5c1a",
-      "sourceName": "@animoca/ethereum-contracts/contracts/metatx/libraries/ERC2771Calldata.sol",
-      "solcConfig": {
-        "version": "0.8.17",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 99999
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "devdoc",
-                "userdoc",
-                "storageLayout",
-                "evm.gasEstimates"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          },
-          "metadata": {
-            "useLiteralContent": true
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.8"
-      ],
-      "artifacts": [
-        "ERC2771Calldata"
-      ]
-    },
     "/Users/nathan/Workspace/animoca/tinytap/edc-smart-contract/node_modules/@animoca/ethereum-contracts/contracts/token/ERC20/base/ERC20BatchTransfersBase.sol": {
-      "lastModificationDate": 1680486960383,
+      "lastModificationDate": 1680506595195,
       "contentHash": "77101751aebed197bc8b7f3d059ce179",
       "sourceName": "@animoca/ethereum-contracts/contracts/token/ERC20/base/ERC20BatchTransfersBase.sol",
       "solcConfig": {
@@ -2224,6 +2133,97 @@
       ],
       "artifacts": [
         "ERC20BatchTransfersBase"
+      ]
+    },
+    "/Users/nathan/Workspace/animoca/tinytap/edc-smart-contract/node_modules/@animoca/ethereum-contracts/contracts/token/ERC20/base/ERC20SafeTransfersBase.sol": {
+      "lastModificationDate": 1680506595196,
+      "contentHash": "22078d5c0a39b047e3afca052c6be8f3",
+      "sourceName": "@animoca/ethereum-contracts/contracts/token/ERC20/base/ERC20SafeTransfersBase.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 99999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./../interfaces/IERC20SafeTransfers.sol",
+        "./../libraries/ERC20Storage.sol",
+        "@openzeppelin/contracts/utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.8"
+      ],
+      "artifacts": [
+        "ERC20SafeTransfersBase"
+      ]
+    },
+    "/Users/nathan/Workspace/animoca/tinytap/edc-smart-contract/node_modules/@animoca/ethereum-contracts/contracts/token/ERC20/base/ERC20DetailedBase.sol": {
+      "lastModificationDate": 1680506595195,
+      "contentHash": "2d614af7546f7b4210a1ae4eef70c8e8",
+      "sourceName": "@animoca/ethereum-contracts/contracts/token/ERC20/base/ERC20DetailedBase.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 99999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./../interfaces/IERC20Detailed.sol",
+        "./../libraries/ERC20DetailedStorage.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.8"
+      ],
+      "artifacts": [
+        "ERC20DetailedBase"
       ]
     },
     "/Users/nathan/Workspace/animoca/tinytap/edc-smart-contract/contracts/EDuCoinMock.sol": {

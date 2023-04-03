@@ -5,10 +5,10 @@ __metadata:
   version: 6
   cacheKey: 8
 
-"@animoca/ethereum-contract-helpers@npm:^0.0.2":
-  version: 0.0.2
-  resolution: "@animoca/ethereum-contract-helpers@npm:0.0.2"
-  checksum: 209dda59c9902848733d9e73ac1cf8e99c2c49d5233760297692acd736959019169a8042b948c8a23688e49abc939cc17b28d97a22d7b2cdef6554562f74c5a2
+"@animoca/ethereum-contract-helpers@npm:^0.0.4":
+  version: 0.0.4
+  resolution: "@animoca/ethereum-contract-helpers@npm:0.0.4"
+  checksum: 92e2c5dbec0129899f013d524b49488928cd14a18e78c7738d807ac5ca4f09038a9dd24b89ae949b527973f8cf86e6bf24a34b8c8954a2bb39d8b625ae98b98f
   languageName: node
   linkType: hard
 
@@ -26,17 +26,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@animoca/ethereum-contracts@npm:^1.1.0":
-  version: 1.1.0
-  resolution: "@animoca/ethereum-contracts@npm:1.1.0"
-  checksum: d393d297ebb4d48597b7b5df248a9a6aa275d5d5ae8c51bf7b28ef4cee8205187e51b67445c5f716db96c2984cb3e9a30e5b427157fff4cbe110171b4691f3e9
+"@animoca/ethereum-contracts@npm:^1.1.1":
+  version: 1.1.1
+  resolution: "@animoca/ethereum-contracts@npm:1.1.1"
+  checksum: 17594a1781dede0cbc81f8e8262c3a0bed696f37f624e3ef7ed408f9e844f205d80232e9ec68aeedc98c68c39881e27613ee193bfc43a8d2cfeb08ca48434d8c
   languageName: node
   linkType: hard
 
-"@animoca/ethereum-migrations@npm:^1.0.6":
-  version: 1.0.6
-  resolution: "@animoca/ethereum-migrations@npm:1.0.6"
-  checksum: 76547eac4c0bffe0e3382275a4147ee9884537a2ea21458c6886ea86e34fef0e53de729a833b2ba78e96a8b5629f5ae548f3648a656b0029db4b33334c57f7e4
+"@animoca/ethereum-migrations@npm:^1.0.7":
+  version: 1.0.7
+  resolution: "@animoca/ethereum-migrations@npm:1.0.7"
+  checksum: 17ff6089fb0ec2dd35f5118c312f06b38f0585505b47ece7944f63f1a8c8cf5576b93b7cc235a4035480d8d7bbc9e5c58f7163371705abfc37928795da76c5f8
   languageName: node
   linkType: hard
 
@@ -2316,11 +2316,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "edc-smart-contract@workspace:."
   dependencies:
-    "@animoca/ethereum-contract-helpers": ^0.0.2
-    "@animoca/ethereum-contracts": ^1.1.0
+    "@animoca/ethereum-contract-helpers": ^0.0.4
+    "@animoca/ethereum-contracts": ^1.1.1
     "@animoca/ethereum-contracts-1.0": "npm:@animoca/ethereum-contracts@1.0.0"
     "@animoca/ethereum-contracts-bridging-0.3": "npm:@animoca/ethereum-contracts-bridging@0.3.0"
-    "@animoca/ethereum-migrations": ^1.0.6
+    "@animoca/ethereum-migrations": ^1.0.7
     "@ethersproject/abi": ^5.7.0
     "@nomicfoundation/hardhat-chai-matchers": ^1.0.6
     "@nomicfoundation/hardhat-network-helpers": ^1.0.8
