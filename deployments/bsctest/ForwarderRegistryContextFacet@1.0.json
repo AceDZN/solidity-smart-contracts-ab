@@ -1,0 +1,101 @@
+{
+  "address": "0x31D3A584CA2fB7eD2f06AA4F839e6AC55c3e679d",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "contract IForwarderRegistry",
+          "name": "forwarderRegistry_",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [],
+      "name": "forwarderRegistry",
+      "outputs": [
+        {
+          "internalType": "contract IForwarderRegistry",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "forwarder",
+          "type": "address"
+        }
+      ],
+      "name": "isTrustedForwarder",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0xd07239fc0cefcda6b247b7d2094558176b241e80046308dc7d7663b3897d37a6",
+  "receipt": {
+    "to": "0x4e59b44847b379578588920cA78FbF26c0B4956C",
+    "from": "0xF7e30493A9018Bd8f364ba0E83E3BD4DD5d6bB2b",
+    "contractAddress": null,
+    "transactionIndex": 4,
+    "gasUsed": "130455",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x25eabd38bd04e68134ec9c7cdc60464cf9bec979ce7087fa985421a95e4a04f9",
+    "transactionHash": "0xd07239fc0cefcda6b247b7d2094558176b241e80046308dc7d7663b3897d37a6",
+    "logs": [],
+    "blockNumber": 28608475,
+    "cumulativeGasUsed": "1532962",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [
+    "0x3f547F87251710F70109Ae0409d461b270709693"
+  ],
+  "numDeployments": 1,
+  "solcInputHash": "a6ab94751dde68b4d6125ac6f179d1ce",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"contract IForwarderRegistry\",\"name\":\"forwarderRegistry_\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[],\"name\":\"forwarderRegistry\",\"outputs\":[{\"internalType\":\"contract IForwarderRegistry\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"forwarder\",\"type\":\"address\"}],\"name\":\"isTrustedForwarder\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"This contract is to be used as a diamond facet (see ERC2535 Diamond Standard https://eips.ethereum.org/EIPS/eip-2535).Derived from https://github.com/wighawag/universal-forwarder (MIT licence)\",\"kind\":\"dev\",\"methods\":{\"isTrustedForwarder(address)\":{\"params\":{\"forwarder\":\"The forwarder to check.\"},\"returns\":{\"_0\":\"True if `forwarder` is trusted, false if not.\"}}},\"title\":\"Meta-Transactions Forwarder Registry Context (facet version).\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"isTrustedForwarder(address)\":{\"notice\":\"Checks whether a forwarder is trusted.\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/metatx/facets/ForwarderRegistryContextFacet.sol\":\"ForwarderRegistryContextFacet\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":99999},\"remappings\":[]},\"sources\":{\"contracts/metatx/facets/ForwarderRegistryContextFacet.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity 0.8.17;\\n\\nimport {IERC2771} from \\\"./../interfaces/IERC2771.sol\\\";\\nimport {IForwarderRegistry} from \\\"./../interfaces/IForwarderRegistry.sol\\\";\\n\\n/// @title Meta-Transactions Forwarder Registry Context (facet version).\\n/// @dev This contract is to be used as a diamond facet (see ERC2535 Diamond Standard https://eips.ethereum.org/EIPS/eip-2535).\\n/// @dev Derived from https://github.com/wighawag/universal-forwarder (MIT licence)\\ncontract ForwarderRegistryContextFacet is IERC2771 {\\n    IForwarderRegistry public immutable forwarderRegistry;\\n\\n    constructor(IForwarderRegistry forwarderRegistry_) {\\n        forwarderRegistry = forwarderRegistry_;\\n    }\\n\\n    /// @inheritdoc IERC2771\\n    function isTrustedForwarder(address forwarder) external view virtual override returns (bool) {\\n        return forwarder == address(forwarderRegistry);\\n    }\\n}\\n\",\"keccak256\":\"0xf9d0271af56f783ff78c7c498c954e1da5f73a072a7a3ddf64f85fb3e6726b3c\",\"license\":\"MIT\"},\"contracts/metatx/interfaces/IERC2771.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity ^0.8.8;\\n\\n/// @title Secure Protocol for Native Meta Transactions.\\n/// @dev See https://eips.ethereum.org/EIPS/eip-2771\\ninterface IERC2771 {\\n    /// @notice Checks whether a forwarder is trusted.\\n    /// @param forwarder The forwarder to check.\\n    /// @return isTrusted True if `forwarder` is trusted, false if not.\\n    function isTrustedForwarder(address forwarder) external view returns (bool isTrusted);\\n}\\n\",\"keccak256\":\"0xc3568432dcadfdcda315a80e0f7edec9b3d751c68ea00c671e86571d02b57e9c\",\"license\":\"MIT\"},\"contracts/metatx/interfaces/IForwarderRegistry.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity ^0.8.8;\\n\\n/// @title Universal Meta-Transactions Forwarder Registry.\\n/// @dev Derived from https://github.com/wighawag/universal-forwarder (MIT licence)\\ninterface IForwarderRegistry {\\n    /// @notice Checks whether an account is as an approved meta-transaction forwarder for a sender account.\\n    /// @param sender The sender account.\\n    /// @param forwarder The forwarder account.\\n    /// @return isApproved True if `forwarder` is an approved meta-transaction forwarder for `sender`, false otherwise.\\n    function isApprovedForwarder(address sender, address forwarder) external view returns (bool isApproved);\\n}\\n\",\"keccak256\":\"0xe3487e6d79da78bc0ea5b4649ca9cc7a0376800280e3e389a5e70fc7ced74d00\",\"license\":\"MIT\"}},\"version\":1}",
+  "bytecode": "0x60a060405234801561001057600080fd5b506040516101ec3803806101ec83398101604081905261002f91610040565b6001600160a01b0316608052610070565b60006020828403121561005257600080fd5b81516001600160a01b038116811461006957600080fd5b9392505050565b60805161015c6100906000396000818160400152609c015261015c6000f3fe608060405234801561001057600080fd5b50600436106100365760003560e01c80632b4c9f161461003b578063572b6c051461008c575b600080fd5b6100627f000000000000000000000000000000000000000000000000000000000000000081565b60405173ffffffffffffffffffffffffffffffffffffffff90911681526020015b60405180910390f35b6100d961009a3660046100e9565b7f000000000000000000000000000000000000000000000000000000000000000073ffffffffffffffffffffffffffffffffffffffff90811691161490565b6040519015158152602001610083565b6000602082840312156100fb57600080fd5b813573ffffffffffffffffffffffffffffffffffffffff8116811461011f57600080fd5b939250505056fea26469706673582212200ff29039b6c242ec9a3374bc23fc5054405164f376e9f213b6c2acf88739578964736f6c63430008110033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100365760003560e01c80632b4c9f161461003b578063572b6c051461008c575b600080fd5b6100627f000000000000000000000000000000000000000000000000000000000000000081565b60405173ffffffffffffffffffffffffffffffffffffffff90911681526020015b60405180910390f35b6100d961009a3660046100e9565b7f000000000000000000000000000000000000000000000000000000000000000073ffffffffffffffffffffffffffffffffffffffff90811691161490565b6040519015158152602001610083565b6000602082840312156100fb57600080fd5b813573ffffffffffffffffffffffffffffffffffffffff8116811461011f57600080fd5b939250505056fea26469706673582212200ff29039b6c242ec9a3374bc23fc5054405164f376e9f213b6c2acf88739578964736f6c63430008110033",
+  "devdoc": {
+    "details": "This contract is to be used as a diamond facet (see ERC2535 Diamond Standard https://eips.ethereum.org/EIPS/eip-2535).Derived from https://github.com/wighawag/universal-forwarder (MIT licence)",
+    "kind": "dev",
+    "methods": {
+      "isTrustedForwarder(address)": {
+        "params": {
+          "forwarder": "The forwarder to check."
+        },
+        "returns": {
+          "_0": "True if `forwarder` is trusted, false if not."
+        }
+      }
+    },
+    "title": "Meta-Transactions Forwarder Registry Context (facet version).",
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "isTrustedForwarder(address)": {
+        "notice": "Checks whether a forwarder is trusted."
+      }
+    },
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [],
+    "types": null
+  }
+}
