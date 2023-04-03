@@ -15,64 +15,39 @@ Only the contracts corresponding to the features developed for the current versi
 ## Compilation artifacts
 
 The compilation artifacts, including the debug information, are available in the `artifacts` folder, both in the git repository and the release packages.
-The artifacts for the previous versions of the module are also available in the `artifacts_previous` folder. These artifacts can be imported in dependents projects and used in tests or migration scripts with the following hardhat configuration:
-`./hardhat-config/external.config.js`
-
-```javascript
-module.exports = {
-  external: {
-    contracts: [
-      {
-        artifacts: './node_modules/@animoca/ethereum-contracts/artifacts',
-      },
-    ],
-  },
-}
-```
 
 ## Development
 
 Install the dependencies:
 
-#### Installation
+### Installation
 
 ```bash
 yarn install
 ```
 
-#### Compile the contract:
+### Compile the contract
 
 ```bash
 yarn compile
 ```
 
-#### Run the tests coverage:
+### Run the tests coverage
 
 ```bash
 yarn test
+yarn coverage
 ```
 
-- If you see the following warning
-  > Warning: Contract code size is 24622 bytes and exceeds 24576 bytes (a limit introduced in Spurious Dragon). This contract may not be deployable on mainnet. Consider enabling the optimizer (with a low "runs" value!), turning off revert strings, or using libraries.
-  - You need to reduce the optimizer runs count (`hardhat-config/settings.config.js`):
-    ```bash
-    settings: {
-            optimizer: {
-            enabled: true,
-            runs: 200,
-            },
-        },
-    ```
+## Deploy Contract
 
-### Deploy Contract
-
-#### TestNet:
+### TestNet
 
 _BSCtestnet:_ `yarn deploy:bscTestnet`
 
 _Goerli:_ `yarn deploy:goerli`
 
-#### MainNet:
+### MainNet
 
 _BSC:_
 `yarn deploy:bsc`
@@ -80,21 +55,20 @@ _BSC:_
 _Ethereum:_
 `yarn deploy:mainnet`
 
-### Verify Contract
+## Verify Contract
 
-#### TestNet:
+### TestNet
 
-_BSCtestnet:_ `yarn verify:bscTestnet {{address}}`
+_BSCtestnet:_ `yarn verify:bscTestnet`
 
-_Goerli:_ `yarn verify:goerli {{address}}`
+_Goerli:_ `yarn verify:goerli`
 
-#### MainNet:
+### MainNet
 
-_BSC:_ `yarn verify:bsc {{address}}`
+_BSC:_ `yarn verify:bsc`
 
-_Ethereum:_ `yarn verify:mainnet {{address}}`
+_Ethereum:_ `yarn verify:mainnet`
 
 \_
 
 _See `package.json` for additional commands._
-
