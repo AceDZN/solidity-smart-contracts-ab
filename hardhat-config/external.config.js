@@ -17,6 +17,8 @@ module.exports = {
       goerli: ['node_modules/@animoca/ethereum-migrations/deployments/goerli', 'node_modules/@animoca/ethereum-migrations/deployments/all'],
       matic: ['node_modules/@animoca/ethereum-migrations/deployments/matic', 'node_modules/@animoca/ethereum-migrations/deployments/all'],
       mumbai: ['node_modules/@animoca/ethereum-migrations/deployments/mumbai', 'node_modules/@animoca/ethereum-migrations/deployments/all'],
+      bsctest: ['node_modules/@animoca/ethereum-migrations/deployments/bsctest', 'node_modules/@animoca/ethereum-migrations/deployments/all'],
+      bsc: ['node_modules/@animoca/ethereum-migrations/deployments/bsc', 'node_modules/@animoca/ethereum-migrations/deployments/all'],
     },
   },
 };

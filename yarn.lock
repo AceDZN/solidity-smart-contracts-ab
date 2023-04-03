@@ -33,10 +33,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@animoca/ethereum-migrations@npm:^1.0.7":
-  version: 1.0.7
-  resolution: "@animoca/ethereum-migrations@npm:1.0.7"
-  checksum: 17ff6089fb0ec2dd35f5118c312f06b38f0585505b47ece7944f63f1a8c8cf5576b93b7cc235a4035480d8d7bbc9e5c58f7163371705abfc37928795da76c5f8
+"@animoca/ethereum-migrations@npm:^1.0.8":
+  version: 1.0.8
+  resolution: "@animoca/ethereum-migrations@npm:1.0.8"
+  checksum: 3bc11dbd30ca19158f2511f3ba5301b5a19102f3b175420923dae743d121a00a1d2ff18d169af87cdde9b9d26fc2b6f0c43c3ac90fc34c9909ebabf265c5f60c
   languageName: node
   linkType: hard
 
@@ -2320,7 +2320,7 @@ __metadata:
     "@animoca/ethereum-contracts": ^1.1.1
     "@animoca/ethereum-contracts-1.0": "npm:@animoca/ethereum-contracts@1.0.0"
     "@animoca/ethereum-contracts-bridging-0.3": "npm:@animoca/ethereum-contracts-bridging@0.3.0"
-    "@animoca/ethereum-migrations": ^1.0.7
+    "@animoca/ethereum-migrations": ^1.0.8
     "@ethersproject/abi": ^5.7.0
     "@nomicfoundation/hardhat-chai-matchers": ^1.0.6
     "@nomicfoundation/hardhat-network-helpers": ^1.0.8
