@@ -1,50 +1,35 @@
-const os = require('os').homedir()
-//const { mnemonic } = require(os + '/.mnemonics')
 module.exports = {
-  defaultNetwork: 'bscTestnet',
   networks: {
-    hardhat: {
-      gas: 19000000,
-      allowUnlimitedContractSize: true,
-      timeout: 1800000,
-      tags: ['testnet', 'hardhat'],
-    },
+    // Ethereum
     mainnet: {
-      url: process.env.PROVIDER_URL_INFURA_MAINNET,
-      chainId: 1,
-      gasPrice: 'auto',
-      tags: ['production', 'ethereum'],
+      defaultProvider: 'infura',
     },
     goerli: {
-      url: process.env.PROVIDER_URL_INFURA_GOERLI,
-      chainId: 5,
-      gasPrice: 'auto',
-      tags: ['testnet', 'ethereum'],
+      defaultProvider: 'infura',
     },
-    polygon: {
-      url: process.env.PROVIDER_URL_INFURA_MATIC,
-      chainId: 137,
-      gasPrice: 'auto',
-      tags: ['production', 'polygon'],
+
+    // Polygon
+    matic: {
+      defaultProvider: 'infura',
     },
     mumbai: {
-      url: process.env.PROVIDER_URL_INFURA_MUMBAI,
-      chainId: 80001,
-      gasPrice: 'auto',
-      tags: ['testnet', 'polygon'],
+      defaultProvider: 'infura',
     },
+
+    // BSC
     bsc: {
-      url: process.env.PROVIDER_URL_INFURA_BSC_MAINNET,
-      chainId: 56,
-      gasPrice: 'auto',
-      tags: ['production', 'bsc'],
+      defaultProvider: 'binance',
     },
-    bscTestnet: {
-      url: process.env.PROVIDER_URL_INFURA_BSC_TESTNET,
-      chainId: 97,
-      gasPrice: 'auto',
-      tags: ['testnet', 'bsc'],
+    bsctest: {
+      defaultProvider: 'binance',
+    },
+
+    // OKEx
+    okex: {
+      defaultProvider: 'exchain',
+    },
+    okextest: {
+      defaultProvider: 'exchain',
     },
   },
-}
-
+};

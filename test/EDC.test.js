@@ -1,16 +1,17 @@
-const { expect, assert } = require('chai')
-const { ethers } = require('hardhat')
-const { runBehaviorTests } = require('@animoca/ethereum-contract-helpers/src/test/run')
-const { getDeployerAddress } = require('@animoca/ethereum-contract-helpers/src/test/accounts')
-const { getForwarderRegistryAddress } = require('@animoca/ethereum-contracts/test/helpers/registries')
-const { behavesLikeERC20 } = require('@animoca/ethereum-contracts/test/contracts/token/ERC20/behaviors/ERC20.behavior')
+const {expect} = require('chai');
+const {ethers} = require('hardhat');
+const {runBehaviorTests} = require('@animoca/ethereum-contract-helpers/src/test/run');
+const {loadFixture} = require('@animoca/ethereum-contract-helpers/src/test/fixtures');
+const {getDeployerAddress} = require('@animoca/ethereum-contract-helpers/src/test/accounts');
+const {getForwarderRegistryAddress} = require('@animoca/ethereum-contracts/test/helpers/registries');
+const {behavesLikeERC20} = require('@animoca/ethereum-contracts/test/contracts/token/ERC20/behaviors/ERC20.behavior');
 
-const name = 'EDC'
-const symbol = 'EDC'
-const decimals = ethers.BigNumber.from('18')
-const tokenURI = 'https://web3.tinytap.it'
-const recipients = [] //['0x4470C9799e3BCb1e97dFF44fd63122645B46125D']
-const amounts = [] //[100]
+const name = 'EDC';
+const symbol = 'EDC';
+const decimals = ethers.BigNumber.from('18');
+const tokenURI = 'https://web3.tinytap.it';
+const recipients = []; //['0x4470C9799e3BCb1e97dFF44fd63122645B46125D']
+const amounts = []; //[100]
 
 const config = {
   immutable: {
@@ -28,7 +29,7 @@ const config = {
     initialAdmin: getDeployerAddress,
     initialOwner: getDeployerAddress,
   },
-}
+};
 
 runBehaviorTests('EDuCoinMock', config, function (deployFn) {
   const implementation = {
@@ -77,57 +78,62 @@ runBehaviorTests('EDuCoinMock', config, function (deployFn) {
     },
     methods: {},
     deploy: async function (initialHolders, initialBalances, deployer) {
-      const contract = await deployFn()
-      await contract.grantRole(await contract.MINTER_ROLE(), deployer.address)
-      await contract.batchMint(initialHolders, initialBalances)
-      return contract
+      const contract = await deployFn({
+        recipients: initialHolders,
+        amounts: initialBalances,
+      });
+      return contract;
     },
-  }
+  };
 
-  let deployer
+  let deployer;
 
   before(async function () {
-    ;[deployer] = await ethers.getSigners()
-  })
+    [deployer] = await ethers.getSigners();
+  });
 
-  behavesLikeERC20(implementation)
-})
+  describe('EDuCoin allocation on deployment', function () {
+    const testAllocations = [
+      {
+        wallet: '0xABCE7FE58Ba3Dc24685416201175aCe8Bfb5C451',
+        amount: ethers.utils.parseUnits('50000000', 'ether'),
+      },
+      {
+        wallet: '0x309cd07e1bA2B459Fb90237C6BF09457C87EbBFF',
+        amount: ethers.utils.parseUnits('100000000', 'ether'),
+      },
+      {
+        wallet: '0x62a69D28DCFeb4A8579c3b70cd479C77fF60F10B',
+        amount: ethers.utils.parseUnits('75000000', 'ether'),
+      },
+    ];
 
-describe('EDuCoin allocation on deploy', function () {
-  let EDuCoin, add1, add2, deployer
-  const arguments = require('../test_arguments')
-  const [tokenName, tokenSymbol, tokenDecimals, tokenHolders, tokenAmounts, forwardRegistryContract] = [...arguments]
-  const totalSupply = tokenAmounts.reduce((accumulator, currentValue) => BigInt(accumulator) + BigInt(currentValue), 0)
+    const tokenHolders = testAllocations.map((allocation) => allocation.wallet);
+    const tokenAmounts = testAllocations.map((allocation) => allocation.amount);
 
-  beforeEach('Set EDC enviroment for tests', async () => {
-    //;[deployer, add1, add2] = await ethers.getSigners()
+    const fixture = async function () {
+      this.token = await implementation.deploy(tokenHolders, tokenAmounts, deployer);
+    };
 
-    // deploy CourseNFT
-    const EDuCoinContract = await ethers.getContractFactory('EDuCoin')
-    EDuCoin = await EDuCoinContract.deploy(
-      tokenName,
-      tokenSymbol,
-      tokenDecimals,
-      tokenHolders,
-      tokenAmounts,
-      forwardRegistryContract,
-    )
-    await EDuCoin.deployed()
-  })
+    beforeEach(async function () {
+      await loadFixture(fixture, this);
+    });
 
-  it('check that totalSupply equal to all holders allocations', async () => {
-    await EDuCoin.totalSupply().then((contractTotal) => {
-      expect(contractTotal).to.eq(totalSupply)
-      //assert.fail('must throw err')
-    })
-  })
-  it('check each user has the correct allocation', async () => {
-    for (let i = 0; i < tokenHolders.length; i++) {
-      await EDuCoin.balanceOf(tokenHolders[i]).then((userBalance) => {
-        expect(userBalance).to.eq(BigInt(tokenAmounts[i]))
-        //assert.fail('must throw err')
-      })
-    }
-  })
-})
+    it('check that totalSupply equal to all holders allocations', async function () {
+      const totalSupply = tokenAmounts.reduce((accumulator, currentValue) => BigInt(accumulator) + BigInt(currentValue), 0);
+      await this.token.totalSupply().then((contractTotal) => {
+        expect(contractTotal).to.eq(totalSupply);
+      });
+    });
 
+    it('check each user has the correct allocation', async function () {
+      for (let i = 0; i < tokenHolders.length; i++) {
+        await this.token.balanceOf(tokenHolders[i]).then((userBalance) => {
+          expect(userBalance).to.eq(BigInt(tokenAmounts[i]));
+        });
+      }
+    });
+  });
+
+  behavesLikeERC20(implementation);
+});

@@ -86,5 +86,4 @@ module.exports = {
       80001: '0x86CA78E96904652f1079915b91A06237C77858DB', //POLYGON TESTNET
     },
   },
-}
-
+};
